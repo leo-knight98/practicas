@@ -4,7 +4,8 @@ require_once("conectar.php");
 class Carrito {
     public static function add($usuario, $producto, $cantidad) {
         $connBD = BD::crearInstancia();
-        $stmt = $connBD->prepare("INSERT INTO carrito(usuario, producto, cantidad) VALUES (:usuario, :producto, :cantidad)");
+        $stmt = $connBD->prepare("INSERT INTO carrito(usuario, producto, cantidad) VALUES (:usuario, :producto, :cantidad)
+                                    ON DUPLICATE KEY UPDATE cantidad = cantidad + :cantidad");
         $stmt->bindParam(':usuario', $usuario);
         $stmt->bindParam(':producto', $producto);
         $stmt->bindParam(':cantidad', $cantidad);
