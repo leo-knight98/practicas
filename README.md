@@ -21,3 +21,7 @@ Usuarios:
 
 Carrito:
 -Usuario (id del usuario), producto (id del producto), cantidad.
+
+
+**_Por hacer_**
+Agregar una lista de deseos
