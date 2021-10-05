@@ -1,8 +1,9 @@
 # practicas
 
 Prototipo de tienda virtual hecha con PHP, MySQL y PDO, aparte de Bootstrap. No tiene todas las funciones implementadas. Hasta el momento:
-**Carrito**: muestra los productos para cada usuario. Se pueden añadir y quitar.
+**Carrito**: muestra los productos para cada usuario. Se pueden añadir y quitar. Vaciar el carrito.
 **Tienda**: está hecho un CRUD de los productos disponibles de la tienda, accesible para usuarios con el rol "empleado".
+**Gestión de usuarios**: sólo accesible para aquellos con el rol "admin".
 
 **_Base de datos_**
 3 tablas. 
